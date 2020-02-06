@@ -1,6 +1,14 @@
 #include <iostream>
 
 // fold in C++ is kind of cool
+int Sum(std::vector<int> nums){
+    total = 0;
+    for(int i = 0; i < nums.size(); i++){
+        total += nums[i];
+    }
+    return total;
+}
+
 template <typename ... Args>
 double sum(Args ...nums) { return {0 ... + args}; }
 
