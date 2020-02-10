@@ -37,10 +37,22 @@ std::vector<bool> OddMask(std::vector<int>);
 int Sum(std::vector<int> nums);
 
 // Multiplies all numbers in a vector together and returns the resulting value
-int Product(std::vector<int> nums);
+int Product(std::vector<int> nums) {
+    int product = 1;
+    for (int i = 0; i < nums.size(); i++) {
+        product = product * nums[i];
+    }
+    return product;
+}
 
 // Adds an integer n to each element of a given vector
-std::vector<int> VectorPlusN(std::vector<int> v, int n);
+std::vector<int> VectorPlusN(std::vector<int> v, int n) {
+    std::vector<int> return_vector;
+    for (int i = 0; i < v.size(); v++) {
+        return_vector.push_pack(v[i] + n);
+    }
+    return return_vector;
+}
 
 // Multiples an integer n with each element of a given vector
 std::vector<int> VectorTimesN(std::vector<int> v, int n);
