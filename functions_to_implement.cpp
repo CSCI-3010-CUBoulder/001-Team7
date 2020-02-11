@@ -1,4 +1,8 @@
-/* String functions section */
+// #define CATCh_CONFIG_MAIN
+// #include "catch.hpp"
+
+/* String functions section */ 
+
 
 // Splits a single string on separator into a vector of strings
 std::vector<std::string> Split(std::string whole, std::string separator);
@@ -24,6 +28,15 @@ int RemoveTwos(int original) {
     }
     return original;
 }
+TEST_CASE("RemoveTwos are computed", "[RemoveTwos]") {
+
+    SECTION("For positive NUmbers")  {
+        REQUIRE( RemoveTwos(3) == 1);
+        REQUIRE( RemoveTwos(20) == 5);
+    }
+}
+
+
 // takes a vector of integers and removes all elements evenly divisible by the passed in int
 std::vector<int> MultiplesFilter(std::vector<int>, int divides_by);
 
@@ -48,8 +61,8 @@ int Product(std::vector<int> nums) {
 // Adds an integer n to each element of a given vector
 std::vector<int> VectorPlusN(std::vector<int> v, int n) {
     std::vector<int> return_vector;
-    for (int i = 0; i < v.size(); v++) {
-        return_vector.push_pack(v[i] + n);
+    for (int i = 0; i < v.size(); i++) {
+        return_vector.push_back(v[i] + n);
     }
     return return_vector;
 }

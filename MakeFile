@@ -1,0 +1,14 @@
+CXX = g++  # the compiler
+CXXFLAGS = -std=c++17 -Wall  # flags for the compiler (use c++17 standards, turn on all optional warnings)
+
+all: test
+
+clean:
+	rm test
+
+test: test.cpp functions_to_implement.o
+	
+	$(CXX) $(CXXFLAGS) test.cpp functions_to_implement.o -o test
+
+functions_to_implement.o: functions_to_implement.cpp
+	$(CXX) $(CXXFLAGS) functions_to_implement.cpp
