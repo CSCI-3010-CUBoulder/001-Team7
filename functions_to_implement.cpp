@@ -1,6 +1,10 @@
 // #define CATCh_CONFIG_MAIN
 // #include "catch.hpp"
 
+#include<string>
+#include<iostream>
+#include<vector>
+
 /* String functions section */ 
 
 
@@ -27,13 +31,6 @@ int RemoveTwos(int original) {
     original = original / 2;
     }
     return original;
-}
-TEST_CASE("RemoveTwos are computed", "[RemoveTwos]") {
-
-    SECTION("For positive NUmbers")  {
-        REQUIRE( RemoveTwos(3) == 1);
-        REQUIRE( RemoveTwos(20) == 5);
-    }
 }
 
 
