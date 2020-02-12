@@ -48,8 +48,8 @@ int Product(std::vector<int> nums) {
 // Adds an integer n to each element of a given vector
 std::vector<int> VectorPlusN(std::vector<int> v, int n) {
     std::vector<int> return_vector;
-    for (int i = 0; i < v.size(); v++) {
-        return_vector.push_pack(v[i] + n);
+    for (int i = 0; i < v.size(); i++) {
+        return_vector.push_back(v[i] + n);
     }
     return return_vector;
 }
@@ -127,5 +127,3 @@ std::vector<int> SubtractN(std::vector<int>, int n);
 
 // subtracts n to each element of the vector
 std::vector<double> SubtractN(std::vector<double>, double n);
-
-
