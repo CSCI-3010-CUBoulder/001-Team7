@@ -5,7 +5,7 @@
 TEST_CASE("RemoveTwos are computed", "[RemoveTwos]") {
 
     SECTION("For positive NUmbers")  {
-        REQUIRE( RemoveTwos(3) == 1);
+        REQUIRE( RemoveTwos(3) == 3);
         REQUIRE( RemoveTwos(20) == 5);
     }
 }
