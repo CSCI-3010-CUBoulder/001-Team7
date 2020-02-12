@@ -41,7 +41,7 @@ int Sum(std::vector<int> nums);
 // Multiplies all numbers in a vector together and returns the resulting value
 int Product(std::vector<int> nums) {
     int product = 1;
-    for (int i = 0; i < nums.size(); i++) {
+    for (unsigned int i = 0; i < nums.size(); i++) {
         product = product * nums[i];
     }
     return product;
@@ -50,7 +50,7 @@ int Product(std::vector<int> nums) {
 // Adds an integer n to each element of a given vector
 std::vector<int> VectorPlusN(std::vector<int> v, int n) {
     std::vector<int> return_vector;
-    for (int i = 0; i < v.size(); i++) {
+    for (unsigned int i = 0; i < v.size(); i++) {
         return_vector.push_back(v[i] + n);
     }
     return return_vector;
@@ -97,7 +97,7 @@ std::vector<bool> LessMask(std::vector<int> nums, int less_than);
 // Sums all numbers in a vector and returns the resulting value
 double Sum(std::vector<double> nums) {
     double total = 0.00;
-    for(int i = 0; i < nums.size(); i++){
+    for(unsigned int i = 0; i < nums.size(); i++){
         total += nums[i];
     }
     return total;
