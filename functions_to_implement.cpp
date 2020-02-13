@@ -1,6 +1,11 @@
-/* String functions section */
-#include <vector>
-#include <iostream>
+// #define CATCh_CONFIG_MAIN
+// #include "catch.hpp"
+
+#include<string>
+#include<iostream>
+#include<vector>
+
+/* String functions section */ 
 
 // Splits a single string on separator into a vector of strings
 std::vector<std::string> Split(std::string whole, std::string separator);
@@ -26,6 +31,8 @@ int RemoveTwos(int original) {
     }
     return original;
 }
+
+
 // takes a vector of integers and removes all elements evenly divisible by the passed in int
 std::vector<int> MultiplesFilter(std::vector<int>, int divides_by);
 
